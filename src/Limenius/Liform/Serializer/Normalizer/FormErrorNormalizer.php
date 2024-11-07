@@ -55,11 +55,6 @@ class FormErrorNormalizer implements NormalizerInterface
         return $data instanceof FormInterface && $data->isSubmitted() && !$data->isValid();
     }
 
-    public function getSupportedTypes(?string $format): array
-    {
-        return [Form::class];
-    }
-
     /**
      * This code has been taken from JMSSerializer.
      *
